@@ -3,8 +3,9 @@ import streamlit as st
 import requests
 
 # Configuration
-# API_URL = "http://127.0.0.1:8000/generate/"
-API_URL = "https://c837-185-61-190-198.ngrok-free.app/generate"
+API_URL = "http://127.0.0.1:8000/generate/"
+# Si vous utilisez ngrok, décommentez la ligne suivante et remplacez l'URL
+# API_URL = "https://c837-185-61-190-198.ngrok-free.app/generate"
 
 # Titre et description
 st.title("Bienvenue sur StoryMaker !")
@@ -32,6 +33,7 @@ examples = [
     "Un détective enquête sur une série de disparitions mystérieuses dans une petite ville..."
 ]
 
+# Sélection d'un exemple prédéfini
 selected_example = st.sidebar.selectbox("Choisissez un exemple :", examples)
 
 # Bouton pour utiliser un exemple
@@ -40,6 +42,9 @@ if st.sidebar.button("Utiliser cet exemple"):
 
 # Champ principal pour le prompt
 prompt = st.text_area("Votre prompt :", st.session_state.prompt)
+
+# Mise à jour de l'état du prompt après modification
+st.session_state.prompt = prompt
 
 # Bouton de génération
 if st.button("Générer l'histoire"):

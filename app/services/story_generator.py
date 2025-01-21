@@ -1,7 +1,7 @@
 import subprocess
 from app.core.config import settings
 
-def generate_story(prompt: str, max_length: int = 300) -> str:
+def generate_story(prompt: str, max_length: int = 150, genre: str = "Aventure") -> str:
     """
     Génère une histoire en français à partir d'un prompt en utilisant la CLI Ollama.
     """
