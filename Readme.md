@@ -30,7 +30,7 @@ Développer une solution intégrée qui permette à l'utilisateur de générer d
 2. **Exemples prédéfinis** :
    - Plusieurs prompts sont proposés pour inspirer l'utilisateur.
 3. **Téléchargement** :
-   - Les histoires générées peuvent être téléchargées au format `.txt`.
+   - Les histoires générées peuvent être téléchargées au format `.txt` ou `.pdf`.
 4. **Interface utilisateur intuitive** :
    - Conçue avec **Streamlit**, permettant une navigation simple et rapide.
 5. **Backend robuste** :
@@ -112,7 +112,8 @@ Streamlit (frontend)
 2. **Choisissez** un genre et une longueur pour l'histoire.
 3. **Saisissez** ou sélectionnez un prompt depuis la barre latérale.
 4. Cliquez sur **"Générer l'histoire"**.
-5. Téléchargez ou lisez l'histoire directement depuis l'application.
+5. **Téléchargement** :
+   - Les histoires générées peuvent être téléchargées au format `.txt` ou `.pdf`.
 
 ---
 
