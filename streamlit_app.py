@@ -4,7 +4,7 @@ import requests
 
 # Configuration
 # API_URL = "http://127.0.0.1:8000/generate/"
-API_URL = "https://0fb4-185-61-190-198.ngrok-free.app/generate"
+API_URL = "https://c837-185-61-190-198.ngrok-free.app/generate"
 
 # Titre et description
 st.title("Bienvenue sur StoryMaker !")
