@@ -29,11 +29,17 @@ Développer une solution intégrée qui permette à l'utilisateur de générer d
    - Définition de la longueur de l'histoire (100 à 400 mots).
 2. **Exemples prédéfinis** :
    - Plusieurs prompts sont proposés pour inspirer l'utilisateur.
-3. **Téléchargement** :
+3. **Statistiques d'écriture** :
+   - Nombre de mots.
+   - Nombre de caractères.
+   - Distribution des mots-clés les plus fréquents.
+4. **Affichage de l'historique** :
+   - Les histoires générées sont sauvegardées et accessibles depuis la barre latérale.
+5. **Téléchargement** :
    - Les histoires générées peuvent être téléchargées au format `.txt` ou `.pdf`.
-4. **Interface utilisateur intuitive** :
+6. **Interface utilisateur intuitive** :
    - Conçue avec **Streamlit**, permettant une navigation simple et rapide.
-5. **Backend robuste** :
+7. **Backend robuste** :
    - API développée avec **FastAPI** pour gérer les requêtes et communiquer avec le modèle **Ollama**.
 
 ---
@@ -45,6 +51,10 @@ Développer une solution intégrée qui permette à l'utilisateur de générer d
 - **Frontend** : Streamlit (interface utilisateur).
 - **Backend** : FastAPI (gestion des requêtes API).
 - **Modèle IA** : Ollama (modèle `llama2` pour la génération de texte).
+- **Bibliothèques complémentaires** :
+  - **Pillow** pour gérer le logo dans les PDF.
+  - **Matplotlib** pour les graphiques.
+  - **FPDF** pour la génération de PDF.
 - **Serveur local** : Ollama sert les requêtes depuis votre machine ou un serveur dédié.
 - **Outils de déploiement** :
   - Local avec **ngrok**.
@@ -112,8 +122,10 @@ Streamlit (frontend)
 2. **Choisissez** un genre et une longueur pour l'histoire.
 3. **Saisissez** ou sélectionnez un prompt depuis la barre latérale.
 4. Cliquez sur **"Générer l'histoire"**.
-5. **Téléchargement** :
-   - Les histoires générées peuvent être téléchargées au format `.txt` ou `.pdf`.
+5. Consultez les **statistiques** sur l'histoire générée (nombre de mots, caractères, etc.).
+6. **Téléchargement** :
+   - Les histoires générées peuvent être téléchargées au format `.pdf`.
+7. Consultez l'**historique** des histoires depuis la barre latérale.
 
 ---
 
@@ -146,8 +158,9 @@ http://127.0.0.1:8000/docs
 
 1. **Ajout de nouveaux genres ou styles narratifs.**
 2. **Hébergement complet sur un serveur cloud.**
-3. **Gestion de l’historique des histoires générées.**
-4. **Amélioration des modèles pour mieux traiter la langue française.**
+3. **Analyse avancée du texte** : Lisibilité, sentiments, etc.
+4. **Mode collaboratif** pour écrire à plusieurs.
+5. **Génération d'illustrations** pour accompagner les histoires.
 
 ---
 
