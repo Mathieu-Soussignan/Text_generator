@@ -2,7 +2,7 @@
 
 ## **1. Introduction**
 
-**StoryMaker** est une application interactive permettant de générer des histoires captivantes à l'aide d'un modèle d'IA. Elle offre une interface avec Streamlit pour personnaliser la longueur, le genre, et le contenu des histoires. Le backend utilise **FastAPI** pour gérer les requêtes et interagit avec le modèle **Ollama** pour produire du contenu narratif de qualité.
+**StoryMaker** est une application conçue pour vous permettre de créer facilement des histoires captivantes avec l’aide de l’intelligence artificielle. Grâce à une interface simple développée avec **Streamlit**, vous pouvez personnaliser vos récits en choisissant leur genre, leur longueur et leur contenu. Le backend, construit avec **FastAPI**, communique avec le modèle **Ollama** pour générer des textes de qualité. Que vous soyez amateur de récits ou créateur en quête d’inspiration, StoryMaker vous accompagne dans l’écriture d’histoires uniques.
 
 ---
 
